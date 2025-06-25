@@ -11,11 +11,11 @@ A fully commented robot controller for the Turtlesim simulation environment in R
   - This node is responsible for controlling the turtle's movement and drawing in the Turtlesim environment.
 
 - **Topics**:
-  - **`/turtle1/cmd_vel`**: This topic is used to publish velocity commands to the turtle. The `Twist` message type is utilized to control linear and angular speeds.
+  - **`/turtle1/cmd_vel`**: This topic is used to publish velocity commands to the turtle. The `Twist` message type is utilised to control linear and angular speeds.
   - **`/turtle1/pose`**: This topic subscribes to the turtle's pose information, allowing the controller to make decisions based on the turtle's current position.
 
 - **Services**:
-  - **`/turtle1/set_pen`**: This service is called to change the pen color and width when the turtle crosses a specified line on the screen. The service uses the `SetPen` message type, allowing for dynamic drawing capabilities.
+  - **`/turtle1/set_pen`**: This service is called to change the pen colour and width when the turtle crosses a specified line on the screen. The service uses the `SetPen` message type, allowing for dynamic drawing capabilities.
 
 ## Prerequisites
 
@@ -57,13 +57,9 @@ To run the Turtlesim simulation and the robot controller, follow these steps:
    ros2 run my_robot_controller turtle_controller
    ```
 
-## Contributing
-
-Contributions are welcome! If you have suggestions for improvements or new features, please open an issue or submit a pull request.
-
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License].
 
 ## Acknowledgments
 
