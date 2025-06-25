@@ -7,9 +7,15 @@ A fully commented robot controller for the Turtlesim simulation environment in R
 
 ## Features
 
-- Control a turtle in the Turtlesim environment.
-- Fully commented code for easy understanding and modification.
-- Simple and intuitive interface for robot control.
+- **Node**: `turtle_controller`
+  - This node is responsible for controlling the turtle's movement and drawing in the Turtlesim environment.
+
+- **Topics**:
+  - **`/turtle1/cmd_vel`**: This topic is used to publish velocity commands to the turtle. The `Twist` message type is utilized to control linear and angular speeds.
+  - **`/turtle1/pose`**: This topic subscribes to the turtle's pose information, allowing the controller to make decisions based on the turtle's current position.
+
+- **Services**:
+  - **`/turtle1/set_pen`**: This service is called to change the pen color and width when the turtle crosses a specified line on the screen. The service uses the `SetPen` message type, allowing for dynamic drawing capabilities.
 
 ## Prerequisites
 
